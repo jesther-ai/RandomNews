@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        // Do any additional setup after loading the view.
+
         fetchPostData { Post in
             for x in 0...Post.articles!.count-1{
                 self.titleArray[x] = Post.articles![x].title!
